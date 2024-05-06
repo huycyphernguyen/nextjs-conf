@@ -1,4 +1,4 @@
-import { ComponentProps } from 'react';
+import { ComponentProps, Ref, forwardRef } from 'react';
 import Link from 'next/link';
 
 type ButtonOrLinkProps = ComponentProps<'button'> & ComponentProps<'a'>;
@@ -11,6 +11,7 @@ export interface Props extends ButtonOrLinkProps {}
  * also correctly get wrapped in a next/link component to ensure ideal
  * page-to-page transitions.
  */
+
 export function ButtonOrLink({ href, ...props }: Props) {
 	const isLink = typeof href !== 'undefined';
 
