@@ -5,8 +5,4 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - 3000:3000
-    volumes:
-      - .:/app
-    environment:
-      NODE_ENV: production
+      - '3000:3000'

@@ -1,2 +1,10 @@
 node_modules
-*storybook*
+storybook-static
+Dockerfile
+.dockerignore
+node_modules
+npm-debug.log
+README.md
+.next
+docker
+.git
